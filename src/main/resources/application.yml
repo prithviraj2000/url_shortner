@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: shortner
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: Url-Shortner
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    ssl: false
+    connect-timeout: 2000
+    max-total: 128

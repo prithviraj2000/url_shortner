@@ -1,13 +1,14 @@
 package com.url.shortner.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Getter
+@Setter
 public class UrlShortnerRequest {
     private String originalUrl;
+    private String shortUrl;
 
-    public String getOriginalUrl() {
-        return originalUrl;
-    }
-
-    public void setOriginalUrl(String originalUrl) {
-        this.originalUrl = originalUrl;
-    }
 }

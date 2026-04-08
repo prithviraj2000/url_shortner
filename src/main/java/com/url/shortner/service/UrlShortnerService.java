@@ -1,11 +1,12 @@
 package com.url.shortner.service;
 
 import com.url.shortner.dto.UrlShortnerRequest;
+import com.url.shortner.dto.UrlShortnerResponse;
 
 
 public interface UrlShortnerService {
 
-     String shortenUrl(UrlShortnerRequest request);
+     UrlShortnerResponse shortenUrl(UrlShortnerRequest request);
 
-     String getOriginalUrl(String shortUrl);
+     UrlShortnerResponse getOriginalUrl(String shortUrl);
 }

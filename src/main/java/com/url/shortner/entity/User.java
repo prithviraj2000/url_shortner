@@ -1,27 +1,18 @@
 package com.url.shortner.entity;
 
+
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
-
-@Document(collection = "url-info")
+@Document(collection = "users")
 @Getter
 @Setter
 @AllArgsConstructor
-@Builder
-public class UrlInfo {
-
+public class User {
 
     private String id;
-    @Id
-    private String shortUrl;
-    private String originalUrl;
-    private Date createdAt;
-    private Date accessedAt;
-
+    private String username;
 }
